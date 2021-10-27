@@ -1,0 +1,124 @@
+html {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background: url(IMG/83728066_2737067829703034_161197862149947392_n.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    margin-top: 25vh;
+}
+
+.box {
+    display: flex;
+}
+
+.box .eye {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    display: block;
+    background: #fff;
+    margin: 0 40px;
+    border-radius: 50%;
+}
+
+.box .eye::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 35px;
+    transform: translate(-50%, -50%);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #000;
+    border: 10px solid #2196f3;
+    box-sizing: border-box;
+}
+
+.button-section {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 10%;
+    background-color: #e1af933a;
+    border-radius: 0 25px 0 0;
+    border: 5px solid #e1af93;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #da514b;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 50px;
+}
+
+.my-heart {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 50px;
+    display: flex;
+}
+
+h1 {
+    color: #fff;
+    font-size: 40px;
+    text-shadow: 2px 2px #f20044;
+    padding-right: 50px;
+}
+
+.heart {
+    height: 70px;
+    width: 70px;
+    background: #f20044;
+    position: relative;
+    transform: rotate(-45deg);
+    box-shadow: -10px 10px 90px #f20044;
+    animation: heart 0.6s linear infinite;
+}
+
+@keyframes heart {
+    0% {
+        transform: rotate(-45deg) scale(1.07);
+    }
+    80% {
+        transform: rotate(-45deg) scale(1.0);
+    }
+    100% {
+        transform: rotate(-45deg) scale(0.8);
+    }
+}
+
+.heart::before {
+    content: '';
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    background: #f20044;
+    box-shadow: -10px -10px 90px #f20044;
+    top: -50%;
+    border-radius: 50px;
+}
+
+.heart::after {
+    content: '';
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    background: #f20044;
+    right: -50%;
+    border-radius: 50px;
+    box-shadow: 10px 10px 90px #f20044;
+}
